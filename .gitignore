@@ -1,0 +1,7 @@
+/docker
+/.vagrant
+CentOS-7.box
+shell.c
+sqlite2.c
+sqlite3.h
+sqlite3ext.3
