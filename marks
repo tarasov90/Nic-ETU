@@ -1,1 +1,0 @@
-RUN sudo sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys sudo apt update 2>&1 | grep '[0-9A-z]\{16\}$' | xargs
