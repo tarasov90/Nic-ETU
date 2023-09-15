@@ -1,4 +1,4 @@
 [centos]
 192.168.56.1:8080 #TODO IP адрес отличается от того что присваивается в Vagrantfile (192.168.56.5), ну и порт тут ни к чему
-#ansible_ssh_port=22 ansible_user="vagrant" ansible_pass="vagrant" ansible_ssh_private_key_file=.vagrant/machines/default/virtualbox/private_key #TODO почему закоментировано? Рабочий конфиг, ка по мне
+#ansible_ssh_port=22 ansible_user="vagrant" ansible_pass="vagrant" ansible_ssh_private_key_file=.vagrant/machines/default/virtualbox/private_key #TODO почему закоментировано? Рабочий конфиг, как по мне
 # vm1 ansible_host=192.168.56.5 ansible_user="vagrant" ansible_pass="vagrant" ansible_ssh_private_key_file=.vagrant/machines/default/virtualbox/private_key #TODO может так лучше?
