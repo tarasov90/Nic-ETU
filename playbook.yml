@@ -1,7 +1,7 @@
 ---
 - name: Install Docker
   gather_facts: False
-  hosts: all
+  hosts: centos
   #connection: local
   become: true
   vars:
@@ -75,8 +75,8 @@
         
     - name: Copy docker file
       copy:
-        src: ./dockerfile
-        dest: ./docker/dockerfile
+        src: ./Dockerfile
+        dest: ./docker/Dockerfile
         
     - name: start docker
       service:
@@ -92,7 +92,7 @@
         source: build
         build: 
           path: ./docker
-          dockerfile: dockerfile
+          dockerfile: Dockerfile
         state: present 
       
     - name: Run docker container "sql" with "-td"

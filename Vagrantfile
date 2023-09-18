@@ -15,8 +15,8 @@ Vagrant.configure("2") do |config|
    end
   #config.vm.provision "shell", inline ""
   config.vm.provision "ansible" do |ansible|
-  	ansible.inventory_path = "hosts"
-  	#ansible.limit = "centos"
+  	ansible.inventory_path = "hosts.ini"
+  	ansible.limit = "centos"
         ansible.playbook = "playbook.yml"
    end
 end
